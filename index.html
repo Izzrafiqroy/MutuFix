@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomeFix - Home Maintenance System</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body class="font-sans antialiased">
+    <!-- Navbar -->
+    <nav class="site-nav">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="nav-shell flex items-center justify-between">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-mark">HF</span>
+                    <span>HomeFix</span>
+                </a>
+                <div class="hidden md:flex md:items-center md:space-x-2">
+                    <a href="services.html" class="nav-link">Services</a>
+                    <a href="how-it-works.html" class="nav-link">How it Works</a>
+                    <a href="about.html" class="nav-link">About Us</a>
+                </div>
+                <div class="flex items-center gap-2">
+                    <a href="#" class="nav-cta">
+                        Login / Sign Up
+                    </a>
+                    <button class="nav-mobile-btn md:hidden" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-nav-menu">
+                        <svg class="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-nav-menu" data-mobile-menu class="mobile-nav-menu md:hidden hidden">
+                <div class="space-y-1">
+                    <a href="services.html" class="mobile-nav-link">Services</a>
+                    <a href="how-it-works.html" class="mobile-nav-link">How it Works</a>
+                    <a href="about.html" class="mobile-nav-link">About Us</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Image Section -->
+    <section class="hero-image-section relative">
+        <div class="hero-image-container">
+            <img src="pic/homepagepic.png" alt="Professional home maintenance worker" class="hero-image">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Professional Home Maintenance at Your Fingertips
+            </h1>
+            <p class="hero-subtitle">
+                Book trusted professionals for plumbing, electrical, appliance installation, lawn mowing and more.
+            </p>
+            <a href="https://wa.link/88dp6o" target="_blank" rel="noopener noreferrer" class="hero-button">
+                Book a Service
+            </a>
+        </div>
+    </section>
+
+    <!-- Service Grid -->
+    <section class="py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl font-bold text-primary-blue text-center mb-8">Our Services</h2>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <!-- Plumbing -->
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary-blue/10 p-3 rounded-full">
+                            <svg class="h-5 w-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3s-5 5.5-5 9a5 5 0 0010 0c0-3.5-5-9-5-9z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-medium text-primary-blue ml-3">Plumbing</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Expert pipe repair, leak detection, and installation services for your home.
+                    </p>
+                </div>
+                <!-- Electrical Wiring -->
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary-blue/10 p-3 rounded-full">
+                            <svg class="h-5 w-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 2L4 14h6l-1 8 9-12h-6l1-8z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-medium text-primary-blue ml-3">Electrical Wiring</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Safe and reliable electrical wiring, panel upgrades, and lighting installation.
+                    </p>
+                </div>
+                <!-- Appliance Installation -->
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary-blue/10 p-3 rounded-full">
+                            <svg class="h-5 w-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="4" y="5" width="16" height="12" rx="2" ry="2" stroke-width="2"></rect>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20h4M12 17v3"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-medium text-primary-blue ml-3">Appliance Installation</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Professional installation of refrigerators, washers, dryers, and more.
+                    </p>
+                </div>
+                <!-- Lawn Mowing -->
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary-blue/10 p-3 rounded-full">
+                            <svg class="h-5 w-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="7" cy="18" r="2" stroke-width="2"></circle>
+                                <circle cx="17" cy="18" r="2" stroke-width="2"></circle>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 18h1l3-8h7l3 4h2M8 10l-1.5-3H4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-medium text-primary-blue ml-3">Lawn Mowing</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Regular lawn maintenance, mowing, trimming, and cleanup services.
+                    </p>
+                </div>
+                <!-- CCTV & Security -->
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary-blue/10 p-3 rounded-full">
+                            <svg class="h-5 w-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <rect x="3" y="7" width="13" height="8" rx="2" ry="2" stroke-width="2"></rect>
+                                <circle cx="9.5" cy="11" r="2" stroke-width="2"></circle>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 10h3l2 2v2l-2 2h-3"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-medium text-primary-blue ml-3">CCTV &amp; Security</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Camera setup, smart door locks, and home security system installation.
+                    </p>
+                </div>
+                <!-- Plant Nursery -->
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary-blue/10 p-3 rounded-full">
+                            <svg class="h-5 w-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20c0-6-3-10-8-12 0 8 4 12 8 12z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20c0-6 3-10 8-12 0 8-4 12-8 12z"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 20v-9"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-medium text-primary-blue ml-3">Plant Nursery</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Indoor and outdoor plants, repotting, and garden starter setup for homes.
+                    </p>
+                </div>
+                <!-- House Painting -->
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary-blue/10 p-3 rounded-full">
+                            <svg class="h-5 w-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 11l9-7 9 7"></path>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10v10h14V10"></path>
+                                <rect x="14" y="6" width="6" height="3" rx="1" ry="1" stroke-width="2"></rect>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 9v4"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-medium text-primary-blue ml-3">House Painting</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Interior and exterior painting with neat finishing and color consultation.
+                    </p>
+                </div>
+                <!-- Pest Control -->
+                <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition-shadow">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-primary-blue/10 p-3 rounded-full">
+                            <svg class="h-5 w-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="3" stroke-width="2"></circle>
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9V6M12 18v-3M9 12H6M18 12h-3M9.5 9.5L8 8M14.5 14.5L16 16M14.5 9.5L16 8M9.5 14.5L8 16"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-medium text-primary-blue ml-3">Pest Control</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Effective treatment and prevention for termites, ants, cockroaches, and more.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Value Proposition -->
+    <section class="bg-light-blue py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold text-primary-blue mb-8">Why Choose Us?</h2>
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center justify-start mb-4">
+                        <div class="bg-primary-blue/10 p-3 rounded-full">
+                            <svg class="h-5 w-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 2a.5.5 0 110-1 .5.5 0 010 1zm0 4c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 2a.5.5 0 110-1 .5.5 0 010 1z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-medium text-primary-blue ml-3">Verified Pros</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        All our professionals are background-checked and certified.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center justify-start mb-4">
+                        <div class="bg-primary-blue/10 p-3 rounded-full">
+                            <svg class="h-5 w-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3M6 16l6-6m0 0l6 6m-6 0h12"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-medium text-primary-blue ml-3">24/7 Support</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Round-the-clock customer support for any emergencies or questions.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <div class="flex items-center justify-start mb-4">
+                        <div class="bg-primary-blue/10 p-3 rounded-full">
+                            <svg class="h-5 w-5 text-primary-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-lg font-medium text-primary-blue ml-3">Transparent Pricing</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Upfront pricing with no hidden fees. Know the cost before booking.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-12 bg-gradient-to-r from-[var(--primary-blue)] to-[var(--primary-dark)] text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-3">HomeFix</h3>
+                    <p class="text-blue-100 leading-relaxed">
+                        Professional home maintenance services made easy.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wide text-white/90 mb-3">Services</h4>
+                    <ul class="space-y-2 text-blue-100">
+                        <li><a href="#" class="hover:text-white transition-colors">Plumbing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Electrical</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Appliance Installation</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Lawn Mowing</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">CCTV &amp; Security</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Plant Nursery</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">House Painting</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Pest Control</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wide text-white/90 mb-3">Company</h4>
+                    <ul class="space-y-2 text-blue-100">
+                        <li><a href="about.html" class="hover:text-white transition-colors">About Us</a></li>
+                        <li><a href="how-it-works.html" class="hover:text-white transition-colors">How it Works</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Careers</a></li>
+                        <li><a href="#" class="hover:text-white transition-colors">Blog</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold uppercase tracking-wide text-white/90 mb-3">Contact</h4>
+                    <ul class="space-y-2 text-blue-100">
+                        <li>123 Home Street, Kuala Lumpur</li>
+                        <li><a href="tel:+60123456789" class="hover:text-white transition-colors">+60 12-345 6789</a></li>
+                        <li><a href="mailto:info@homefix.com" class="hover:text-white transition-colors">info@homefix.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-10 pt-6 border-t border-white/20 text-center text-sm text-blue-100">
+                &copy; <span id="year"></span> HomeFix. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+    <script src="js/mobile-nav.js" defer></script>
+</body>
+</html>
